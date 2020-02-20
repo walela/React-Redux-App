@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const getQuotes = () => dispatch => {
   axios
-    .get(`https://programming-quotes-api.herokuapp.com/quotes/page/1`)
+    .get(`https://programming-quotes-api.herokuapp.com/quotes/page/2`)
     .then(response => {
       dispatch({
         type: GET_RANDOM_QUOTE,

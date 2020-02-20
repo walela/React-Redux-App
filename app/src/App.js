@@ -10,10 +10,12 @@ function App({ quotes, getQuotes }) {
   }, [])
   return (
     <div className='App'>
-      <h1>Quotes!</h1>
-      {quotes.map(quote => {
-        return <Card key={uuid()} text={quote.en} author={quote.author} />
-      })}
+      <h1>Programming Quotes!</h1>
+      <div className='quotes'>
+        {quotes.map(quote => {
+          return <Card key={uuid()} text={quote.en} author={quote.author} />
+        })}
+      </div>
     </div>
   )
 }
